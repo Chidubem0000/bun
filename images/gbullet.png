@@ -1,0 +1,114 @@
+ <!DOCTYPE html> 
+
+
+
+
+
+
+
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+       <title>Union Bank of Nigeria | Page Not Found</title>
+	   <meta name="description" content="The Union Bank of Nigeria page you are trying to reach is not found. We apologize for the inconvenience.">
+<meta name="redirect-type" content="302, temporary">
+<meta name="robots" content="noindex, follow">
+
+        <!-- Bootstrap & jquery popups-->
+		<link href="../css/error_new.css" rel="stylesheet" type="text/css">
+	
+	<script type="text/javascript" src="../js/jquery-1.12.1_new.js"></script>
+<script type="text/javascript" src="../js/jquery-migrate-1.4.1_new.js"></script>
+<script src="../js/error_new.js" type="text/javascript"></script>
+        
+      
+		
+	<!-- End of GOOGLEMAP ATM LOCATION DEPENDENCIES-->	
+		
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+   </head>
+
+   <body class="fsd-layout-body">
+<a class="ada-hidden" href="#skip-to-h1">Skip to main content</a>
+<div class="fsd-layout fsd-2c-700lt-layout">
+  <div class="fsd-border">
+    <div id="content-height" class="center-content">
+      <div class="header">
+        <div class="header-module">
+          <div class="text-w-logo-skin">
+            <div class="header-left">
+              <div class="bofa-logo">
+              	<a href="#"><img height="70" width="70" alt="Union Bank of Nigeria Logo" src="Union-bank-Secondary-logo.jpeg"></a>
+              </div> 
+              <div class="clearboth"></div>
+            </div>
+            <div class="header-right">
+              <ul class="header-links">
+                <li class="sign-in"><a href="#" onclick="window.location.replace ('/uonline')">Sign In</a></li>
+                <li> <a href="#" onclick="window.location.replace ('/uonline')">Home</a> </li>
+                <li> <a href="#" onclick="window.location.replace ('/uonline')">Locations</a> </li>
+                <li> <a href="https://www.unionbankng.com/feedback-and-support/F">Contact Us</a> </li>
+                <li class="last-link"> <a href="https://www.unionbankng.com/feedback-and-support/F">Help</a> </li>
+              </ul>
+            </div>
+            <div class="clearboth"></div>
+          </div>
+        </div>
+        <div class="page-title-fsd-module">
+          <div class="redbar-scart-status-skin sup-ie">
+			<div class="button-text-wrapper">
+				<div class="text-wrapper"></div>
+				<div class="clearboth"></div>
+			</div>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="flex-col lt-col">
+          <h2 class="h2-fsd-red">Sorry! Page Not Found. 
+
+         </h2>
+          <p>The page you are looking for does not  exist, has been removed, name has changed or it is temporarily unavailable.</p>
+          <ul class="content-list">
+			<li><a href="#" onclick="window.location.replace ('/uonline')">Visit our Home Page</a></li>
+		  </ul>
+			<h3 class="top-element">Still need help?</h3>
+			<p>If you're still not sure how to get where you're going or you need more help, please <a title="contact us" name="contact us" href="https://www.unionbankng.com/feedback-and-support/contact-us/" target="_self">contact us</a>.</p>
+		</div>
+        <div class="flex-col rt-col"><!-- --></div>
+        <div class="clearboth"><!-- --></div>
+      </div>
+      <div class="footer">
+		<div class="footer-top">&nbsp;</div>
+        <div class="footer-inner" id="inner-footer">
+            <div class="global-footer-module">
+              <div class="fsd-skin">
+				<div class="gf-links">
+					<a title="Home" name="global_footer_home" href="https://www.unionbankng.com/" target="_self">Home</a>
+					<a title="Privacy &amp; Security" name="global_footer_privacy__security" href="https://www.unionbankng.com/feedback-and-support/F" target="_self">Feedback &amp; Support</a>
+				    <div class="clearboth"></div>
+				</div>
+				  <p>Union Bank of Nigeria, &copy; 2018 Union Bank of Nigeria Corporation. All rights reserved.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+ 
+
+</html>

@@ -1,0 +1,1 @@
+$(document).ready((function(){var t=$(".fsd-layout .center-content .footer");if(t.length>0){var e=$(".footer-inner",t),n=$("div.center-content").height(),o=$(window).height();if(o>n){var r=o-n;e.css("margin-top",r)}}}));
